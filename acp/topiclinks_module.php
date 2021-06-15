@@ -3,7 +3,7 @@
 /**
 *
 * @package TopicLinks
-* @copyright (c) 2020 DeaDRoMeO ; hello-vitebsk.ru
+* @copyright (c) 2021 DeaDRoMeO ; hello-vitebsk.ru
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
@@ -79,11 +79,7 @@ class topiclinks_module
 			'TL_T'				=> isset($this->config['tl_t']) ? $this->config['tl_t'] : '',
 			'TL_F_B'				=> isset($this->config['tl_f_b']) ? $this->config['tl_f_b'] : '',
 			'TL_T_B'				=> isset($this->config['tl_t_b']) ? $this->config['tl_t_b'] : '',
-			
-			
 			'U_ACTION'				=> $this->u_action,
 		));
 	}
 }
-
-?>

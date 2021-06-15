@@ -1,21 +1,20 @@
 <?php
 
 /**
-*
-* @package TopicLinks
-* @copyright (c) 2020 DeaDRoMeO ; hello-vitebsk.ru
-* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
-*
-*/
+ *
+ * @package TopicLinks
+ * @copyright (c) 2021 DeaDRoMeO ; hello-vitebsk.ru
+ * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
+ *
+ */
 
 namespace deadromeo\topiclinks\migrations;
 
 /**
-* @ignore
-*/
-if (!defined('IN_PHPBB'))
-{
-    exit;
+ * @ignore
+ */
+if (!defined('IN_PHPBB')) {
+	exit;
 }
 
 class release_1_0_1 extends \phpbb\db\migration\migration
@@ -32,7 +31,7 @@ class release_1_0_1 extends \phpbb\db\migration\migration
 			array('config.add', array('tl_on', 0)),
 			array('config.add', array('tl_f', 0)),
 			array('config.add', array('tl_t', 0)),
-		
+
 			// Add new modules
 			array('module.add', array(
 				'acp',
@@ -58,8 +57,6 @@ class release_1_0_1 extends \phpbb\db\migration\migration
 			array('config.remove', array('tl_on')),
 			array('config.remove', array('tl_f')),
 			array('config.remove', array('tl_t')),
-			
-		
 			array('module.remove', array(
 				'acp',
 				'TL_BB',
