@@ -1,0 +1,53 @@
+<!-- INCLUDE overall_header.html -->
+
+<h1>{L_TL_BB}<!-- IF TL_VERSION --> <span style="font-size:0.6em;">v. {TL_VERSION}</span><!-- ENDIF --></h1>
+
+<form id="acp_topiclinks" method="post" action="{U_ACTION}">
+	<fieldset>
+		<legend>{L_TL_CONFIG}</legend>
+		<dl>
+			<dt><label for="tl_on">{L_TL_ON_EXP}</label></dt>
+			<dd>
+				<label><input type="radio" class="radio" name="tl_on" value="1" id="tl_on"<!-- IF TL_ON --> checked="checked"<!-- ENDIF -->/> {L_YES}</label>
+				<label><input type="radio" class="radio" name="tl_on" value="0" <!-- IF not TL_ON --> checked="checked"<!-- ENDIF --> /> {L_NO}</label>
+			</dd>
+		</dl>
+		<dl>
+			<dt><label for="tl_f">{L_TL_F_ON}</label><br /><span>{L_TL_F_ON_EXP}</span></dt>
+			<dd>
+				<label><input type="radio" class="radio" name="tl_f" value="1" id="tl_f"<!-- IF TL_F --> checked="checked"<!-- ENDIF -->/> {L_YES}</label>
+				<label><input type="radio" class="radio" name="tl_f" value="0" <!-- IF not TL_F --> checked="checked"<!-- ENDIF --> /> {L_NO}</label>
+			</dd>
+</dl>
+		<dl>
+			<dt><label for="tl_f_b">{L_TL_F_B_ON}</label><br /><span>{L_TL_F_B_ON_EXP}</span></dt>
+			<dd>
+				<label><input type="radio" class="radio" name="tl_f_b" value="1" id="tl_f_b"<!-- IF TL_F_B --> checked="checked"<!-- ENDIF -->/> {L_YES}</label>
+				<label><input type="radio" class="radio" name="tl_f_b" value="0" <!-- IF not TL_F_B --> checked="checked"<!-- ENDIF --> /> {L_NO}</label>
+			</dd>
+</dl>
+<dl>
+			<dt><label for="tl_t">{L_TL_T_ON}</label><br /><span>{L_TL_T_ON_EXP}</span></dt>
+			<dd>
+				<label><input type="radio" class="radio" name="tl_t" value="1" id="tl_t"<!-- IF TL_T --> checked="checked"<!-- ENDIF -->/> {L_YES}</label>
+				<label><input type="radio" class="radio" name="tl_t" value="0" <!-- IF not TL_T --> checked="checked"<!-- ENDIF --> /> {L_NO}</label>
+			</dd>
+</dl>
+	<dl>
+			<dt><label for="tl_t_b">{L_TL_T_B_ON}</label><br /><span>{L_TL_T_B_ON_EXP}</span></dt>
+			<dd>
+				<label><input type="radio" class="radio" name="tl_t_b" value="1" id="tl_t_b"<!-- IF TL_T_B --> checked="checked"<!-- ENDIF -->/> {L_YES}</label>
+				<label><input type="radio" class="radio" name="tl_t_b" value="0" <!-- IF not TL_T_B --> checked="checked"<!-- ENDIF --> /> {L_NO}</label>
+			</dd>
+</dl>	
+	</fieldset>
+	<fieldset>
+		<legend>{L_ACP_SUBMIT_CHANGES}</legend>
+		<p class="submit-buttons">
+			<input class="button1" type="submit" id="submit" name="submit" value="{L_SUBMIT}" />&nbsp;
+			<input class="button2" type="reset" id="reset" name="reset" value="{L_RESET}" />
+		</p>
+		{S_FORM_TOKEN}
+	</fieldset>
+</form>
+<!-- INCLUDE overall_footer.html -->

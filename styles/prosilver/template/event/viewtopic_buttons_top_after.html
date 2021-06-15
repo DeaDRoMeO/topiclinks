@@ -1,0 +1,30 @@
+<!-- IF TL_ON -->
+		<!-- IF TL_T -->
+		<!-- IF TL_T_B -->
+		<div class="dropdown-container dropdown-container-{S_CONTENT_FLOW_BEGIN} dropdown-up dropdown-{S_CONTENT_FLOW_END} dropdown-button-control" id="quickmod">
+			<span title="{L_LINK_TOPICS}" class="dropdown-trigger button  dropdown-select"><img src="./ext/deadromeo/topiclinks/image/link.png"/></span>
+			<div class="dropdown hidden">
+				<div class="pointer"><div class="pointer-inner"></div></div>
+				<ul class="dropdown-contents">
+				<li>
+				<dl>
+					<dt><strong>{L_SIMPL_LINK}</strong></dt>
+					<dd><input style="padding:5px;" type="text" value="{U_CANONICAL}" title="" style="width: inherit;" onclick="this.focus();this.select();" /></dd>
+				</dl>
+				
+				<dl>
+					<dt><strong>{L_BB_LINK}</strong></dt>
+					<dd><input style="padding:5px;" type="text" value="[url={U_CANONICAL}]{TOPIC_TITLE}[/url]" style="width: inherit;" onclick="this.focus();this.select();" /></dd>
+				</dl>
+				
+			<dl>
+					<dt><strong>{L_HTML_LINK}</strong></dt>
+					<dd ><input style="padding:5px;" type="text" value='&lt;a href="{U_CANONICAL}"&gt;{TOPIC_TITLE}&lt;/a&gt;' title="" style="width: inherit;" onclick="this.focus();this.select();" /></dd>
+				</dl>
+				</li>
+				</ul>
+			</div>
+		</div>
+		<!-- ENDIF -->
+		<!-- ENDIF -->
+		<!-- ENDIF -->

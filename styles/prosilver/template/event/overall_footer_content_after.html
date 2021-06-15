@@ -1,0 +1,57 @@
+<!-- IF TL_ON -->
+<!-- IF TL_F -->
+<!-- IF not TL_F_B -->
+<!-- IF SCRIPT_NAME == "viewforum" -->
+<br/>
+<div class="panel">
+		<div class="inner" >
+		<h2 class="quickreply-title">{L_LINK_FORUMS}</h2>
+				<dl>
+					<dt><strong>{L_SIMPL_LINK}</strong></dt>
+					<dd><input style="width: 97%; padding:5px;" type="text" value="{U_CANONICAL}" title="" style="width: inherit;" onclick="this.focus();this.select();" /></dd>
+				</dl>
+				
+				<dl>
+					<dt><strong>{L_BB_LINK}</strong></dt>
+					<dd><input style="width: 97%;padding:5px;" type="text" value="[url={U_CANONICAL}]{FORUM_NAME}[/url]" style="width: inherit;" onclick="this.focus();this.select();" /></dd>
+				</dl>
+				
+			<dl>
+					<dt><strong>{L_HTML_LINK}</strong></dt>
+					<dd ><input style="width: 97%;padding:5px;" type="text" value='&lt;a href="{U_CANONICAL}"&gt;{FORUM_NAME}&lt;/a&gt;' title="" style="width: inherit;" onclick="this.focus();this.select();" /></dd>
+				</dl>
+			
+		</div>
+		</div>
+		<!-- ENDIF -->
+		<!-- ENDIF -->
+		<!-- ENDIF -->
+		
+		<!-- IF TL_T -->
+		<!-- IF not TL_T_B -->
+		<!-- IF SCRIPT_NAME == "viewtopic" -->
+		<br/>
+<div class="panel">
+		<div class="inner" >
+		<h2 class="quickreply-title">{L_LINK_TOPICS}</h2>
+				<dl>
+					<dt><strong>{L_SIMPL_LINK}</strong></dt>
+					<dd><input style="width: 97%; padding:5px;" type="text" value="{U_CANONICAL}" title="" style="width: inherit;" onclick="this.focus();this.select();" /></dd>
+				</dl>
+				
+				<dl>
+					<dt><strong>{L_BB_LINK}</strong></dt>
+					<dd><input style="width: 97%;padding:5px;" type="text" value="[url={U_CANONICAL}]{TOPIC_TITLE}[/url]" style="width: inherit;" onclick="this.focus();this.select();" /></dd>
+				</dl>
+				
+			<dl>
+					<dt><strong>{L_HTML_LINK}</strong></dt>
+					<dd ><input style="width: 97%;padding:5px;" type="text" value='&lt;a href="{U_CANONICAL}"&gt;{TOPIC_TITLE}&lt;/a&gt;' title="" style="width: inherit;" onclick="this.focus();this.select();" /></dd>
+				</dl>
+			
+		</div>
+		</div>
+		<!-- ENDIF -->
+		<!-- ENDIF -->
+		<!-- ENDIF -->
+		<!-- ENDIF -->

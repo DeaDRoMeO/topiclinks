@@ -1,0 +1,22 @@
+services:
+    deadromeo.topiclinks.functions:
+        class: deadromeo\topiclinks\core\topiclinks
+        arguments:
+            - '@auth'
+            - '@cache'
+            - '@config'
+            - '@content.visibility'
+            - '@dbal.conn'
+            - '@dispatcher'
+            - '@request'
+            - '@template'
+            - '@user'
+            - '%core.root_path%'
+            - '%core.php_ext%'
+    deadromeo.topiclinks.listener:
+        class: deadromeo\topiclinks\event\listener
+        arguments:
+            - '@deadromeo.topiclinks.functions'
+            - '@request'
+        tags:
+            - { name: event.listener }
